@@ -15,7 +15,7 @@ public class SelectionSort {
                     min = j;
                 }
             }
-            //if min element is on at current i position swap it.
+            //if min element is not at current i position swap it.
             if(min != i) {
                 swapCount++;
                 Common.swap(array, i, min);
