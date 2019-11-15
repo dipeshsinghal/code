@@ -49,8 +49,9 @@ public class MergeSort {
     //wrapper to create extra space
     protected static void sort(int[] array){
 
-            extraArray = new int[array.length];
-            mergeSort(array, 0, array.length-1);
+        //Allocating memory only once which is used across all the iteration.
+        extraArray = new int[array.length];
+        mergeSort(array, 0, array.length-1);
 
     }
 
